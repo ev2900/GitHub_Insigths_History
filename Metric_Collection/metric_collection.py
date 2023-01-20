@@ -16,7 +16,7 @@ get_repos = requests.get("https://api.github.com/users/" + git_hub_user_name + "
 for repo in get_repos.json():
 
 	# Get traffic (ie. page views, unique visitor) for each repository
-	get_traffic = requests.get("https://api.github.com/repos/" + git_hub_user_name + "/" + repo["name"] + "/traffic/views", headers = {"Accept": "application/vnd.github+json", "Authorization" : "Bearer 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", "X-GitHub-Api-Version" : "2022-11-28"})
+	get_traffic = requests.get("https://api.github.com/repos/" + git_hub_user_name + "/" + repo["name"] + "/traffic/views", headers = {"Accept": "application/vnd.github+json", "Authorization" : "Bearer " + bearer_token, "X-GitHub-Api-Version" : "2022-11-28"})
 
 	# Create an empty column for the time stamp if it does not exist
 	for date in get_traffic.json()["views"]:
