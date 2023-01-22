@@ -18,7 +18,7 @@ EMR_Studio_Stock_Price_Demo,,,,,,,1.0,,,,,,,,,,
 Flink_Kinesis_Data_Analytics,2.0,1.0,,26.0,26.0,19.0,16.0,38.0,,2.0,15.0,3.0,21.0,23.0,23.0,5.0,
 Flink_Kinesis_Data_Analytics_Scala,,,,,3.0,,,,,,,,,,,,
 Flink_Late_Arriving_Date_Event_Order,,,1.0,,,,,,,,2.0,1.0,,,5.0,,
-Fluentd_Examples,,,,,,,,,,,1.0,2.0,,,,,1.0
+Fluentd_Examples,,,,,,,,,,,1.0,2.0,,,,,2.0
 G-quadruplex_in_HSV,,,,,,,,,,,,,,,,,
 GitHub_Insigths_History,,,,,,,,,,,,,,15.0,17.0,,14.0
 Glue_Examples,,,,1.0,5.0,,,,,,1.0,3.0,2.0,,3.0,,
@@ -35,7 +35,7 @@ OpenSearch_CloudWatch_Alarms,11.0,,3.0,35.0,22.0,20.0,55.0,6.0,,3.0,19.0,17.0,19
 OpenSearch_Dashboard_Nginx_Proxy,10.0,13.0,2.0,8.0,3.0,10.0,34.0,20.0,,6.0,15.0,9.0,31.0,2.0,16.0,3.0,2.0
 OpenSearch_DeletedDocuments,,,3.0,2.0,,,,,,,,,,3.0,,,3.0
 OpenSearch_DynamoDB_Example,,,,,,,,1.0,,,2.0,,1.0,5.0,,,
-OpenSearch_Index_Shard_Size,4.0,2.0,37.0,1.0,15.0,2.0,,,,,,,17.0,4.0,2.0,,1.0
+OpenSearch_Index_Shard_Size,4.0,2.0,37.0,1.0,15.0,2.0,,,,,,,17.0,4.0,2.0,,8.0
 OpenSearch_Kafka_Anomaly_Detection,,,,7.0,,1.0,5.0,,,,,,1.0,,,,1.0
 OpenSearch_Log_Analytics,,,,13.0,1.0,1.0,2.0,,1.0,1.0,6.0,2.0,3.0,,1.0,,1.0
 OpenSearch_Refresh_Interval,,,5.0,2.0,,8.0,1.0,,,,,,5.0,1.0,3.0,,31.0
@@ -54,4 +54,4 @@ RESTful_API_w_node-restful,,,,,,,,,,,,,,,,,
 Robotic_Arm,,,,,,,,,,,,,,,,,
 Simple_Python_Neural_Net,,,,,,,,,,,,,,,4.0,,
 streaming-analytics-workshop,,,,,,,,,,,,,,,,,
-OpenSearch_Read_Only_Index,,,,,,,,,,,,,,,,,1.0
+OpenSearch_Read_Only_Index,,,,,,,,,,,,,,,,,12.0
