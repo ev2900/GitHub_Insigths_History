@@ -13,3 +13,4 @@ Or the table below summarizes views and unique visits per month for all of my re
 | Month       | # of Views  | # of Unique Visits   |
 | ----------- | ----------- | -------------------- |
 | January     | 1615        | 452                  |
+| February    | 2051        | 644                  |
