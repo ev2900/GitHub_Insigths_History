@@ -10,9 +10,10 @@ To view the historic data of views for my repositories check out [views.csv](htt
 
 Or the table below summarizes views and unique visits per month for all of my repositories
  
-| Month       | # of Views  | # of Unique Visits   |
-| ----------- | ----------- | -------------------- |
-| January     | 1615        | 452                  |
-| February    | 2051        | 644                  |
-| March       | 2219        | 780                  |
-| April       | 2774        | 727                  |
+| Month - Year      | # of Views  | # of Unique Visits   |
+| -----------       | ----------- | -------------------- |
+| January - 2023    | 1615        | 452                  |
+| February - 2023   | 2051        | 644                  |
+| March - 2023      | 2219        | 780                  |
+| April - 2023      | 2774        | 727                  |
+| May - 2023        | -           | -                    |
