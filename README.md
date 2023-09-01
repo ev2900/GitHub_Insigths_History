@@ -19,4 +19,5 @@ Or the table below summarizes views and unique visits per month for all of my re
 | May - 2023        | 2651        | 638                  |
 | June - 2023       | 2541        | 769                  |
 | July - 2023       | 2530        | 706                  |
-| **Total**         | **16,381**  | **4,716**            |
+| September - 2023  | 3448        | 856                  |
+| **Total**         | **19,829**  | **5,572**            |
