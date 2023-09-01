@@ -12,12 +12,12 @@ Or the table below summarizes views and unique visits per month for all of my re
  
 | Month - Year      | # of Views  | # of Unique Visits   |
 | -----------       | ----------- | -------------------- |
-| January - 2023    | 1615        | 452                  |
-| February - 2023   | 2051        | 644                  |
-| March - 2023      | 2219        | 780                  |
-| April - 2023      | 2774        | 727                  |
-| May - 2023        | 2651        | 638                  |
-| June - 2023       | 2541        | 769                  |
-| July - 2023       | 2530        | 706                  |
-| September - 2023  | 3448        | 856                  |
+| January - 2023    | 1,615       | 452                  |
+| February - 2023   | 2,051       | 644                  |
+| March - 2023      | 2,219       | 780                  |
+| April - 2023      | 2,774       | 727                  |
+| May - 2023        | 2,651       | 638                  |
+| June - 2023       | 2,541       | 769                  |
+| July - 2023       | 2,530       | 706                  |
+| September - 2023  | 3,448       | 856                  |
 | **Total**         | **19,829**  | **5,572**            |
