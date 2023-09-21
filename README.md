@@ -32,7 +32,10 @@ To generate a person access token go to [Settings](https://github.com/settings/p
 
 The token will need premissions to push to repositories in your account. To make it easy you can select the repo premissions
 
+<img width="500" alt="cat_indicies_1" src="https://github.com/ev2900/GitHub_Insigths_History/blob/main/README/token_creation.png">
+
+After you create the person access token create a file with the name *token.txt* copy/past the value of the person access token from GitHub into this file. Save the file in *Metric_Collection* folder. Or update the path to the file in line 8 of the [metric_collection.py](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/metric_collection.py) script
+
+2. Run the python script
 
 
-3. Run the python script
-   
