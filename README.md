@@ -38,10 +38,23 @@ After you create the person access token create a file with the name *token.txt*
 
 2. Run the python script
 
-The python requires the following libraries: requests, json, pandas. If you do not already have them installed you will need to install them
+A. Install required libraries
 
-Before running the script update the  ```git_hub_user_name = <GitHub user name ex. ev2900>``` with your GitHub username
+The python script requires the following libraries: requests, pandas. If you do not already have them installed install them via. 
+
+```pip install requests```
+```pip install pandas```
+
+B. Configure the output data files
+
+The results of the python script will be directed to [unique_visits.csv](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/Metric_Data/unique_visits.csv) and [views.csv](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/Metric_Data/views.csv) in the *Metric_Collection* folder.
+
+When you clone, download ... this repository these CSV files have data in them w/r to my repository. 
+
+C. Update the python script
+
+In the [metric_collection.py](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/metric_collection.py) update ```git_hub_user_name = <GitHub user name ex. ev2900>``` with your GitHub username
+
+D. Run the python script
 
 To run the python script on the command line run ```python metric_collection.py``` 
-
-After running the python script you should see the files in the *Metric_Data* [unique_visits.csv](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/Metric_Data/unique_visits.csv) and [views.csv](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/Metric_Data/views.csv) updated
