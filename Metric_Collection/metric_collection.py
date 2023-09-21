@@ -7,7 +7,6 @@ import pandas
 git_hub_user_name = "ev2900"
 bearer_token = open("token.txt", "r").read()
 
-
 # Read in historic data
 metric_data_views = pandas.read_csv ("Metric_Data/views.csv")
 metric_data_unique_visits = pandas.read_csv ("Metric_Data/unique_visits.csv")
