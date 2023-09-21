@@ -26,7 +26,11 @@ Or the table below summarizes views and unique visits per month for all of my re
 
 1. Set up a personal access token
 
-The script that collects the page views and unique visitors for each GitHub repository requires push access in order to see the traffic stats. The script uses a GitHub person access token to authenticate. 
+The script that collects the page views and unique visitors requires push access in order to see the traffic statistics for each repository. The script uses a GitHub person access token to authenticate. 
+
+To generate a person access token go to [Settings](https://github.com/settings/profile) -> [Developer settings](https://github.com/settings/apps) -> [Personal access tokens](https://github.com/settings/tokens) -> [Tokens classic](https://github.com/settings/tokens)
+
+The token will need premissions to push to repositories in your account. To make it easy you can select the repo premissions
 
 
 
