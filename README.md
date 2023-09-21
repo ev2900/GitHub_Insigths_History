@@ -30,7 +30,7 @@ The script that collects the page views and unique visitors requires push access
 
 To generate a person access token go to [Settings](https://github.com/settings/profile) -> [Developer settings](https://github.com/settings/apps) -> [Personal access tokens](https://github.com/settings/tokens) -> [Tokens classic](https://github.com/settings/tokens)
 
-The token will need premissions to push to repositories in your account. To make it easy you can select the repo premissions
+The token will need permissions to push to repositories in your account. To make it easy you can select the repo permissions
 
 <img width="500" alt="cat_indicies_1" src="https://github.com/ev2900/GitHub_Insigths_History/blob/main/README/token_creation.png">
 
@@ -38,4 +38,8 @@ After you create the person access token create a file with the name *token.txt*
 
 2. Run the python script
 
+The python requires the following libraries: requests, json, pandas. If you do not already have them installed you will need to install them. 
 
+To run the python script on the command line run ```python metric_collection.py``` 
+
+After running the python script you should see the files in the *Metric_Data* [unique_visits.csv](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/Metric_Data/unique_visits.csv) and [views.csv](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/Metric_Data/views.csv) updated
