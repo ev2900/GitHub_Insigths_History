@@ -1,8 +1,8 @@
 # GitHub Insights History
  
-GitHub provides insights for repositories including page views and unique visitor counts. GitHub only provides 2 weeks of history for these metrics. 
+GitHub provides insights for repositories including page views and unique visitor counts. GitHub only provides 2 weeks of history for these metrics
 
-The script [metric_collection.py](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/metric_collection.py) in this repository collect and store these metrics (page views and unique visitor counts) for all of a given GitHub user's repositories. Storing these metrics outside of GitHub allows a user to retain a longer history for page views and unique visitor counts metrics.
+The script [metric_collection.py](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/metric_collection.py) in this repository collect and store these metrics (page views and unique visitor counts) for all of a given GitHub user's repositories. Storing these metrics outside of GitHub allows a user to retain a longer history for page views and unique visitor counts metrics
 
 ## Summary of My Repository Data
 
@@ -26,7 +26,7 @@ Or the table below summarizes views and unique visits per month for all of my re
 
 1. Set up a personal access token
 
-The script that collects the page views and unique visitors requires push access in order to see the traffic statistics for each repository. The script uses a GitHub person access token to authenticate. 
+The script that collects the page views and unique visitors requires push access in order to see the traffic statistics for each repository. The script uses a GitHub person access token to authenticate
 
 To generate a person access token go to [Settings](https://github.com/settings/profile) -> [Developer settings](https://github.com/settings/apps) -> [Personal access tokens](https://github.com/settings/tokens) -> [Tokens classic](https://github.com/settings/tokens)
 
@@ -38,7 +38,9 @@ After you create the person access token create a file with the name *token.txt*
 
 2. Run the python script
 
-The python requires the following libraries: requests, json, pandas. If you do not already have them installed you will need to install them. 
+The python requires the following libraries: requests, json, pandas. If you do not already have them installed you will need to install them
+
+Before running the script update the  ```git_hub_user_name = <GitHub user name ex. ev2900>``` with your GitHub username
 
 To run the python script on the command line run ```python metric_collection.py``` 
 
