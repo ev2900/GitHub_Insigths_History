@@ -4,7 +4,7 @@ GitHub provides insights for repositories including page views and unique visito
 
 The script [metric_collection.py](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/metric_collection.py) in this repository collect and store these metrics (page views and unique visitor counts) for all of a given GitHub user's repositories. Storing these metrics outside of GitHub allows a user to retain a longer history for page views and unique visitor counts metrics.
 
-## Summary of My ([ev2900](https://github.com/ev2900)) Data
+## Summary of My Repository Data
 
 To view the historic data of views for my repositories check out [views.csv](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/Metric_Data/views.csv) for unique visits check out [unique_visits.csv](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/Metric_Data/unique_visits.csv)
 
@@ -26,5 +26,9 @@ Or the table below summarizes views and unique visits per month for all of my re
 
 1. Set up a personal access token
 
-2. Run the python script
+The script that collects the page views and unique visitors for each GitHub repository requires push access in order to see the traffic stats. The script uses a GitHub person access token to authenticate. 
+
+
+
+3. Run the python script
    
