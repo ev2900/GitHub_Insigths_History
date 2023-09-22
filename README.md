@@ -42,7 +42,7 @@ A. Install required libraries
 
 The python script requires the following libraries: requests, pandas. If you do not already have them installed install them via. 
 
-```pip install requests```
+```pip install requests``` <br>
 ```pip install pandas```
 
 B. Configure the output data files
