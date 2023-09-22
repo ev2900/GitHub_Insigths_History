@@ -64,4 +64,4 @@ To run the python script on the command line run ```python metric_collection.py`
 
 6. Schedule the python script
 
-Now that everything is set up you will want to repeat step #5 at least every two weeks. GitHub insights only keeps two weeks of historic data. Running the script at least every two weeks ensures we are storing longer durations of these statistics in the csv files
+Now that everything is set up you will want to repeat step #5 at least every two weeks. GitHub insights only keeps two weeks of historic data. Running the script at least every two weeks ensures you are storing longer durations of these statistics in the csv files
