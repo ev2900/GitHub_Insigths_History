@@ -35,11 +35,11 @@ The token will need permissions to push to repositories in your account. To make
 
 <img width="500" alt="token_creation" src="https://github.com/ev2900/GitHub_Insigths_History/blob/main/README/token_creation.png">
 
-After you create the person access token create a file with the name *token.txt* copy and past the value of the person access token from GitHub into this file. Save the file in *Metric_Collection* folder
+After you create the person access token create a file with the name *token.txt* then copy and past the value of the person access token from GitHub into this file. Save the file in *Metric_Collection* folder
 
 2. Install required libraries
 
-The python script requires the following libraries: requests, pandas. If you do not already have them installed install them via
+The python script requires the following non-standard libraries: requests, pandas. If you do not already have them installed install them via
 
 ```pip install requests``` <br>
 ```pip install pandas```
@@ -56,7 +56,7 @@ The excel file should look like the following before the first run
 
 4. Update the python script
 
-In the [metric_collection.py](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/metric_collection.py) update ```git_hub_user_name = <GitHub user name ex. ev2900>``` with your GitHub username
+In the [metric_collection.py](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/metric_collection.py) update ```git_hub_user_name = <GitHub user name ex. ev2900>``` with your GitHub username and save the file
 
 5. Run the python script
 
