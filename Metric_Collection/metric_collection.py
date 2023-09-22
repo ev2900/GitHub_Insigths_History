@@ -1,4 +1,3 @@
-
 import requests
 import json
 import pandas
@@ -21,20 +20,19 @@ for repo in get_repos.json():
 	repo_name = repo["name"]
 
 	if not (metric_data_views["Repository_Name"] == repo_name).any():		
-		new_row = {"Repository_Name": [repo_name]}
-		new_row_df = pandas.DataFrame(new_row)
 		
-		metric_data_views = metric_data_views.append(new_row_df) 
+		new_row_df = pandas.DataFrame({"Repository_Name": [repo_name]})
+		
+		metric_data_views = pandas.concat([metric_data_views, new_row_df]) 
 		print("New repository (views): " + repo_name)
 
 	if not (metric_data_unique_visits["Repository_Name"] == repo_name).any():
-		new_row = {"Repository_Name": [repo_name]}
-		new_row_df = pandas.DataFrame(new_row)
 		
-		metric_data_unique_visits = metric_data_unique_visits.append(new_row_df)
+		new_row_df = pandas.DataFrame({"Repository_Name": [repo_name]})
+		
+		metric_data_unique_visits = pandas.concat([metric_data_unique_visits, new_row_df])
 		print("New repository (unique visits): " + repo_name)
 
-# 
 for repo in get_repos.json():
 
 	# Get traffic (ie. page views, unique visitor) for each repository
