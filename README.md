@@ -20,6 +20,7 @@ Or the table below summarizes views and unique visits per month for all of my re
 | June - 2023       | 2,541       | 769                  |
 | July - 2023       | 2,530       | 706                  |
 | September - 2023  | 3,448       | 856                  |
+| October - 2023    | -           | -                    |
 | **Total**         | **19,829**  | **5,572**            |
 
 ## How to Set this up for your GitHub
