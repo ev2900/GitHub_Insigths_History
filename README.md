@@ -26,35 +26,37 @@ Or the table below summarizes views and unique visits per month for all of my re
 
 1. Set up a personal access token
 
-The script that collects the page views and unique visitors requires push access in order to see the traffic statistics for each repository. The script uses a GitHub person access token to authenticate
+The script that collects the number of page views and unique visitors requires push access to see the traffic statistics for each repository. The script in this project uses a GitHub person access token to authenticate
 
 To generate a person access token go to [Settings](https://github.com/settings/profile) -> [Developer settings](https://github.com/settings/apps) -> [Personal access tokens](https://github.com/settings/tokens) -> [Tokens classic](https://github.com/settings/tokens)
 
 The token will need permissions to push to repositories in your account. To make it easy you can select the repo permissions
 
-<img width="500" alt="cat_indicies_1" src="https://github.com/ev2900/GitHub_Insigths_History/blob/main/README/token_creation.png">
+<img width="500" alt="token_creation" src="https://github.com/ev2900/GitHub_Insigths_History/blob/main/README/token_creation.png">
 
-After you create the person access token create a file with the name *token.txt* copy/past the value of the person access token from GitHub into this file. Save the file in *Metric_Collection* folder. Or update the path to the file in line 8 of the [metric_collection.py](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/metric_collection.py) script
+After you create the person access token create a file with the name *token.txt* copy and past the value of the person access token from GitHub into this file. Save the file in *Metric_Collection* folder
 
-2. Run the python script
+2. Install required libraries
 
-A. Install required libraries
-
-The python script requires the following libraries: requests, pandas. If you do not already have them installed install them via. 
+The python script requires the following libraries: requests, pandas. If you do not already have them installed install them via
 
 ```pip install requests``` <br>
 ```pip install pandas```
 
-B. Configure the output data files
+3. Configure the output data files
 
-The results of the python script will be directed to [unique_visits.csv](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/Metric_Data/unique_visits.csv) and [views.csv](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/Metric_Data/views.csv) in the *Metric_Collection* folder.
+The results of the python script will be directed to [unique_visits.csv](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/Metric_Data/unique_visits.csv) and [views.csv](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/Metric_Data/views.csv) in the *Metric_Collection* folder
 
-When you clone, download ... this repository these CSV files have data in them w/r to my repository. 
+When you clone, download ... this repository these CSV files have data in them w/r to my repositories. Delete all of the columns and rows except for first row of the first column
 
-C. Update the python script
+The excel file should look like the following before the first run 
+
+<img width="500" alt="blank_excel" src="https://github.com/ev2900/GitHub_Insigths_History/blob/main/README/blank_excel.png">
+
+4. Update the python script
 
 In the [metric_collection.py](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/metric_collection.py) update ```git_hub_user_name = <GitHub user name ex. ev2900>``` with your GitHub username
 
-D. Run the python script
+5. Run the python script
 
-To run the python script on the command line run ```python metric_collection.py``` 
+To run the python script on the command line run ```python metric_collection.py```
