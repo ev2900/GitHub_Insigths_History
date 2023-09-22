@@ -51,7 +51,7 @@ When you clone, download ... this repository these CSV files have data in them w
 
 The excel file should look like the following before the first run 
 
-<img width="500" alt="blank_excel" src="https://github.com/ev2900/GitHub_Insigths_History/blob/main/README/blank_excel.png">
+<img width="300" alt="blank_excel" src="https://github.com/ev2900/GitHub_Insigths_History/blob/main/README/blank_excel.png">
 
 4. Update the python script
 
