@@ -38,20 +38,9 @@ for repo in get_repos.json():
 	# Get traffic (ie. page views, unique visitor) for each repository
 	get_traffic = requests.get("https://api.github.com/repos/" + git_hub_user_name + "/" + repo["name"] + "/traffic/views", headers = {"Accept": "application/vnd.github+json", "Authorization" : "Bearer " + bearer_token, "X-GitHub-Api-Version" : "2022-11-28"})
 
-	# Create an empty column for the time stamp if it does not exist
-	for date in get_traffic.json()["views"]:
-			
-		timestamp = date["timestamp"]
-
-		if timestamp not in metric_data_views.columns:
-			metric_data_views[timestamp] = ""
-
-		if timestamp not in metric_data_unique_visits.columns:
-			metric_data_unique_visits[timestamp] = ""
-
 	# Iterate over traffic data by date
 	for date in get_traffic.json()["views"]:
-			
+		
 		repo_name = repo["name"]
 		timestamp = date["timestamp"]
 		views = date["count"]
@@ -59,9 +48,11 @@ for repo in get_repos.json():
 
 		# Add view data to data frame
 		metric_data_views.loc[metric_data_views.Repository_Name == repo_name,timestamp] = views
+		print("Updating number of views for " + repo_name + " at " + str(timestamp))
 
 		# Add unique vists to data frame
 		metric_data_unique_visits.loc[metric_data_unique_visits.Repository_Name == repo_name,timestamp] = unique_visits
+		print("Updating number of unique vists for " + repo_name + " at " + str(timestamp))
 
 # Write updated data frame to CSV
 metric_data_views.to_csv("Metric_Data/views.csv", index=False)
