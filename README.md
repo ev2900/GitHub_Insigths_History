@@ -31,7 +31,7 @@ The script that collects the number of page views and unique visitors requires p
 
 To generate a person access token go to [Settings](https://github.com/settings/profile) -> [Developer settings](https://github.com/settings/apps) -> [Personal access tokens](https://github.com/settings/tokens) -> [Tokens classic](https://github.com/settings/tokens)
 
-The token will need permissions to push to repositories in your account. To make it easy you can select the repo permissions
+To make it easy you can select the repo permissions
 
 <img width="500" alt="token_creation" src="https://github.com/ev2900/GitHub_Insigths_History/blob/main/README/token_creation.png">
 
