@@ -1,6 +1,6 @@
 import requests
 import json
-import pandas
+import pandas as pd
 import re
 
 # Configurable variables
@@ -8,8 +8,8 @@ git_hub_user_name = "ev2900"
 bearer_token = open("token.txt", "r").read()
 
 # Read in historic data
-metric_data_views = pandas.read_csv ("Metric_Data/views.csv")
-metric_data_unique_visits = pandas.read_csv ("Metric_Data/unique_visits.csv")
+metric_data_views = pd.read_csv ("Metric_Data/views.csv")
+metric_data_unique_visits = pd.read_csv ("Metric_Data/unique_visits.csv")
 
 # Get list of all repositories for GitHub user
 get_repos = requests.get("https://api.github.com/users/" + git_hub_user_name + "/repos?per_page=250")
@@ -21,16 +21,16 @@ for repo in get_repos.json():
 
 	if not (metric_data_views["Repository_Name"] == repo_name).any():		
 		
-		new_row_df = pandas.DataFrame({"Repository_Name": [repo_name]})
+		new_row_df = pd.DataFrame({"Repository_Name": [repo_name]})
 		
-		metric_data_views = pandas.concat([metric_data_views, new_row_df]) 
+		metric_data_views = pd.concat([metric_data_views, new_row_df]) 
 		print("New repository (views): " + repo_name)
 
 	if not (metric_data_unique_visits["Repository_Name"] == repo_name).any():
 		
-		new_row_df = pandas.DataFrame({"Repository_Name": [repo_name]})
+		new_row_df = pd.DataFrame({"Repository_Name": [repo_name]})
 		
-		metric_data_unique_visits = pandas.concat([metric_data_unique_visits, new_row_df])
+		metric_data_unique_visits = pd.concat([metric_data_unique_visits, new_row_df])
 		print("New repository (unique visits): " + repo_name)
 
 for repo in get_repos.json():
