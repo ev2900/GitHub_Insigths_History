@@ -54,6 +54,19 @@ for repo in get_repos.json():
 		metric_data_unique_visits.loc[metric_data_unique_visits.Repository_Name == repo_name,timestamp] = unique_visits
 		print("Updating number of unique vists for " + repo_name + " at " + str(timestamp))
 
-# Write updated data frame to CSV
+
+# Sort the columns in the views data frame by chronological order
+metric_data_views = metric_data_views.reindex(sorted(metric_data_views.columns), axis=1)
+metric_data_views = metric_data_views[ ['Repository_Name'] + [ col for col in metric_data_views.columns if col != 'Repository_Name' ] ]
+metric_data_views.drop(metric_data_views.columns[len(metric_data_views.columns)-1], axis=1, inplace=True)
+
+# Write the updated views data frame to CSV
 metric_data_views.to_csv("Metric_Data/views.csv", index=False)
+
+# Sort the columns in the unique views data frame by chronological order
+metric_data_unique_visits = metric_data_unique_visits.reindex(sorted(metric_data_unique_visits.columns), axis=1)
+metric_data_unique_visits = metric_data_unique_visits[ ['Repository_Name'] + [ col for col in metric_data_unique_visits.columns if col != 'Repository_Name' ] ]
+metric_data_unique_visits.drop(metric_data_unique_visits.columns[len(metric_data_unique_visits.columns)-1], axis=1, inplace=True)
+
+# Write the updated unique visits data frame to CSV
 metric_data_unique_visits.to_csv("Metric_Data/unique_visits.csv", index=False)
