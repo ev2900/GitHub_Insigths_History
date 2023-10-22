@@ -1,6 +1,8 @@
+git pull
+
 python 0_metric_collection.py
 
-git pull
+python 1_update_readme.py
 
 git add .
 
