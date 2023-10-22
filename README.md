@@ -1,5 +1,5 @@
 # GitHub Insights History
- 
+
 GitHub provides insights for repositories including page views and unique visitor counts. GitHub only provides 2 weeks of history for these metrics
 
 The script [metric_collection.py](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/metric_collection.py) in this repository collect and store these metrics (page views and unique visitor counts) for all of a given GitHub user's repositories. Storing these metrics outside of GitHub allows a user to retain a longer history for page views and unique visitor counts metrics
@@ -9,22 +9,22 @@ The script [metric_collection.py](https://github.com/ev2900/GitHub_Insigths_Hist
 To view the historic data of views for my repositories check out [views.csv](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/Metric_Data/views.csv) for unique visits check out [unique_visits.csv](https://github.com/ev2900/GitHub_Insigths_History/blob/main/Metric_Collection/Metric_Data/unique_visits.csv)
 
 Or the table below summarizes views and unique visits per month for all of my repositories
- 
-| Month - Year		| Month - Year (number)	| # of Views  | # of Unique Visits   |
-| -----------   	| -----------  			| ----------- | -------------------- |
-| January - 2023   	| 2023-01 				| 1,615       | 452                  |
-| February - 2023  	| 2023-02				| 2,051       | 644                  |
-| March - 2023 		| 2023-03				| 2,219       | 780                  |
-| April - 2023 		| 2023-04				| 2,774       | 727                  |
-| May - 2023  		| 2023-05				| 2,651       | 638                  |
-| June - 2023 		| 2023-06				| 2,541       | 769                  |
-| July - 2023 		| 2023-07				| 2,530       | 706                  |
-| August - 2023 	| 2023-08				| 3,448       | 856                  |
-| September - 2023 	| 2023-09				| 3,860       | 916                  |
-| October - 2023	| 2023-10				| 0			  |	0					 |
-| November - 2023	| 2023-11				| 0			  |	0					 |
-| December - 2023	| 2023-12				| 0			  | 0					 |
-| **Total**         | 						|**19,829**   | **6,488**            |
+
+| Month - Year	| # of Views  | # of Unique Visits   |
+| ----------- 	| ----------- | -------------------- |
+| 2023-01 		| 1615        | 452                  |
+| 2023-02		| 2051        | 644                  |
+| 2023-03		| 2219        | 780                  |
+| 2023-04		| 2774        | 727                  |
+| 2023-05		| 2651        | 638                  |
+| 2023-06		| 2541        | 769                  |
+| 2023-07		| 2530        | 706                  |
+| 2023-08		| 3448        | 856                  |
+| 2023-09		| 3860        | 916                  |
+| 2023-10		| 2809		  | 668					 |
+| 2023-11		| 0			  |	0					 |
+| 2023-12		| 0			  | 0					 |
+| **Total**		|**19,829**   | **6,488**            |
 
 ## How to Set this up for your GitHub
 
@@ -53,7 +53,7 @@ The results of the python script will be directed to [unique_visits.csv](https:/
 
 When you clone, download ... this repository these CSV files have data in them w/r to my repositories. Delete all of the columns and rows except for first row of the first column
 
-The excel file should look like the following before the first run 
+The excel file should look like the following before the first run
 
 <img width="300" alt="blank_excel" src="https://github.com/ev2900/GitHub_Insigths_History/blob/main/README/blank_excel.png">
 

@@ -23,8 +23,8 @@ metric_data_views = metric_data_views[filter_col]
 metric_data_views.loc[:,'Row_Total'] = metric_data_views.sum(numeric_only=True, axis=1)
 
 # Sum the column with the total number of views for each repository
-total = metric_data_views['Row_Total'].sum()
-print("Total number of views: " + str(int(total)))
+total_views = metric_data_views['Row_Total'].sum()
+print("Total number of views: " + str(int(total_views)))
 
 #
 # Get total number of views for this month
@@ -38,5 +38,33 @@ metric_data_unique_visits = metric_data_unique_visits[filter_col]
 metric_data_unique_visits.loc[:,'Row_Total'] = metric_data_unique_visits.sum(numeric_only=True, axis=1)
 
 # Sum the column with the total number of views for each repository
-total = metric_data_unique_visits['Row_Total'].sum()
-print("Total number of unique visits: " + str(int(total)))
+total_unique_visits = metric_data_unique_visits['Row_Total'].sum()
+print("Total number of unique visits: " + str(int(total_unique_visits)))
+
+#
+# Update the README
+# 
+
+# Open the README for OpenSearch_CloudWatch_Alarms
+with open("..\\README.md") as README_file:
+	README_lines = [line.rstrip() for line in README_file]
+README_file.close()
+
+new_README_lines = []
+
+for line in README_lines:
+
+	regex = r'\| 2023-10		\| '
+
+	if re.match(regex, line):
+		new_README_lines.append('| ' + year_month.rstrip("-") + '		| ' + str(int(total_views)) + '		  | ' + str(int(total_unique_visits)) + '					 |')
+		print("Match")
+	else:
+		new_README_lines.append(line)
+
+new_README_file = open("..\\README.md", "w")
+
+for line in new_README_lines:
+	new_README_file.write(line + "\n")
+
+new_README_file.close()
