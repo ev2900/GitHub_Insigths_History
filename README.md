@@ -10,18 +10,21 @@ To view the historic data of views for my repositories check out [views.csv](htt
 
 Or the table below summarizes views and unique visits per month for all of my repositories
  
-| Month - Year      | # of Views  | # of Unique Visits   |
-| -----------       | ----------- | -------------------- |
-| January - 2023    | 1,615       | 452                  |
-| February - 2023   | 2,051       | 644                  |
-| March - 2023      | 2,219       | 780                  |
-| April - 2023      | 2,774       | 727                  |
-| May - 2023        | 2,651       | 638                  |
-| June - 2023       | 2,541       | 769                  |
-| July - 2023       | 2,530       | 706                  |
-| September - 2023  | 3,448       | 856                  |
-| October - 2023    | 3,860       | 916                  |
-| **Total**         | **19,829**  | **6,488**            |
+| Month - Year		| Month - Year (number)	| # of Views  | # of Unique Visits   |
+| -----------   	| -----------  			| ----------- | -------------------- |
+| January - 2023   	| 2023-01 				| 1,615       | 452                  |
+| February - 2023  	| 2023-02				| 2,051       | 644                  |
+| March - 2023 		| 2023-03				| 2,219       | 780                  |
+| April - 2023 		| 2023-04				| 2,774       | 727                  |
+| May - 2023  		| 2023-05				| 2,651       | 638                  |
+| June - 2023 		| 2023-06				| 2,541       | 769                  |
+| July - 2023 		| 2023-07				| 2,530       | 706                  |
+| August - 2023 	| 2023-08				| 3,448       | 856                  |
+| September - 2023 	| 2023-09				| 3,860       | 916                  |
+| October - 2023	| 2023-10				| 0			  |	0					 |
+| November - 2023	| 2023-11				| 0			  |	0					 |
+| December - 2023	| 2023-12				| 0			  | 0					 |
+| **Total**         | 						|**19,829**   | **6,488**            |
 
 ## How to Set this up for your GitHub
 

@@ -1,4 +1,4 @@
-python metric_collection.py
+python 0_metric_collection.py
 
 git pull
 
