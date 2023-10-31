@@ -66,7 +66,11 @@ for line in README_lines:
 
 	# Update totals for all months
 	if re.match(r'\| 2023-.*', line):
-		print(line)
+		line_parts = line.split('|')
+
+		print(line_parts[1])
+		print(line_parts[2])
+
 
 new_README_file = open("..\\README.md", "w")
 
