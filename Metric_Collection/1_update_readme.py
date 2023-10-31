@@ -3,6 +3,7 @@ import json
 import pandas as pd
 import re
 import datetime
+import os
 
 # Read in historic data
 metric_data_views = pd.read_csv ("Metric_Data/views.csv")
@@ -51,16 +52,23 @@ with open("..\\README.md") as README_file:
 README_file.close()
 
 new_README_lines = []
+views_months = []
+unique_visits_months = []
 
 for line in README_lines:
 
-	regex = r'\| ' + re.escape(year_month.rstrip("-")) + r' \| '
+	# Find current month and update it with new totals
+	#regex = r'\| ' + re.escape(year_month.rstrip("-")) + r' \| '
 
-	if re.match(regex, line):
+	if re.match(r'\| ' + re.escape(year_month.rstrip("-")) + r' \| ', line):
 		new_README_lines.append('| ' + year_month.rstrip("-") + ' | ' + str(int(total_views)) + ' | ' + str(int(total_unique_visits)) + ' |')
 		print('| ' + year_month.rstrip("-") + ' | ' + str(int(total_views)) + ' | ' + str(int(total_unique_visits)) + '	|')
 	else:
 		new_README_lines.append(line)
+
+	# Update totals for all months
+
+
 
 new_README_file = open("..\\README.md", "w")
 
