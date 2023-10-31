@@ -25,7 +25,7 @@ metric_data_views.loc[:,'Row_Total'] = metric_data_views.sum(numeric_only=True, 
 
 # Sum the column with the total number of views for each repository
 total_views = metric_data_views['Row_Total'].sum()
-print("Total number of views: " + str(int(total_views)))
+print("Total number of views for " +  year_month.rstrip("-") + ": " + str(int(total_views)))
 
 #
 # Get total number of views for this month
@@ -40,7 +40,7 @@ metric_data_unique_visits.loc[:,'Row_Total'] = metric_data_unique_visits.sum(num
 
 # Sum the column with the total number of views for each repository
 total_unique_visits = metric_data_unique_visits['Row_Total'].sum()
-print("Total number of unique visits: " + str(int(total_unique_visits)))
+print("Total number of unique visits for " + year_month.rstrip("-") + ": " + str(int(total_unique_visits)))
 
 #
 # Update the README
@@ -60,17 +60,25 @@ for line in README_lines:
 	# Find current month and update it with new totals
 	if re.match(r'\| ' + re.escape(year_month.rstrip("-")) + r' \| ', line):
 		new_README_lines.append('| ' + year_month.rstrip("-") + ' | ' + str(int(total_views)) + ' | ' + str(int(total_unique_visits)) + ' |')
-		print('| ' + year_month.rstrip("-") + ' | ' + str(int(total_views)) + ' | ' + str(int(total_unique_visits)) + '	|')
+		#print('| ' + year_month.rstrip("-") + ' | ' + str(int(total_views)) + ' | ' + str(int(total_unique_visits)) + '	|')
+
+		views_months.append(int(total_views))
+		unique_visits_months.append(int(total_unique_visits))
+
 	else:
-		new_README_lines.append(line)
+		# Update totals for all months
+		if re.match(r'\| 2023-.*', line):
+			views_months.append(int(line.split('|')[2].rstrip().lstrip()))
+			unique_visits_months.append(int(line.split('|')[3].rstrip().lstrip()))
 
-	# Update totals for all months
-	if re.match(r'\| 2023-.*', line):
-		line_parts = line.split('|')
-
-		print(line_parts[1])
-		print(line_parts[2])
-
+		if re.match(r'.*Total.*', line):
+			print("Total number of unique views for 2023: " + str(sum(views_months)))
+			print("Total number of unique visits for 2023: " + str(sum(unique_visits_months)))
+			
+			new_README_lines.append("| **Total** | **" + str(sum(views_months)) + "** | **" + str(sum(unique_visits_months)) + "** |")
+			#print("| **Total** | **" + str(sum(views_months)) + "** | **" + str(sum(unique_visits_months)) + "** |")
+		else:
+			new_README_lines.append(line)
 
 new_README_file = open("..\\README.md", "w")
 
