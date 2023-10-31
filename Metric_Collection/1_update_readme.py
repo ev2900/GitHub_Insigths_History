@@ -58,8 +58,6 @@ unique_visits_months = []
 for line in README_lines:
 
 	# Find current month and update it with new totals
-	#regex = r'\| ' + re.escape(year_month.rstrip("-")) + r' \| '
-
 	if re.match(r'\| ' + re.escape(year_month.rstrip("-")) + r' \| ', line):
 		new_README_lines.append('| ' + year_month.rstrip("-") + ' | ' + str(int(total_views)) + ' | ' + str(int(total_unique_visits)) + ' |')
 		print('| ' + year_month.rstrip("-") + ' | ' + str(int(total_views)) + ' | ' + str(int(total_unique_visits)) + '	|')
@@ -67,8 +65,8 @@ for line in README_lines:
 		new_README_lines.append(line)
 
 	# Update totals for all months
-
-
+	if re.match(r'\| 2023-.*', line):
+		print(line)
 
 new_README_file = open("..\\README.md", "w")
 
