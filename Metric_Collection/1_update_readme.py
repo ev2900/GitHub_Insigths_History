@@ -68,3 +68,8 @@ for line in new_README_lines:
 	new_README_file.write(line + "\n")
 
 new_README_file.close()
+
+# Push to GitHub
+os.system("git -C C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\GitHub_Insigths_History add .")
+os.system('git -C C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\GitHub_Insigths_History commit -m "Updating history"')
+os.system("git -C C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\GitHub_Insigths_History push")
