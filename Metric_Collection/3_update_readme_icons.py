@@ -97,51 +97,19 @@ def update_readme_icon (repo_path, icon_type, number_to_update):
 #
 
 openSearch_cloudWatch_alarms_views = get_number_of_views("OpenSearch_CloudWatch_Alarms")
-
-openSearch_cloudWatch_alarms_unique_vists = get_number_of_unique_visits("OpenSearch_CloudWatch_Alarms")
-
 update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_CloudWatch_Alarms", "views", openSearch_cloudWatch_alarms_views)
 
+
+openSearch_cloudWatch_alarms_unique_vists = get_number_of_unique_visits("OpenSearch_CloudWatch_Alarms")
 update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_CloudWatch_Alarms", "unique-visits", openSearch_cloudWatch_alarms_unique_vists)
 
-'''
 #
 # OpenSearch_Dashboard_Nginx_Proxy
 #
 
-openSearch_dashboard_nginx_proxy_downloads = get_number_of_deployments("opensearch_nginx.yaml")
+openSearch_dashboard_nginx_proxy_views = get_number_of_views("OpenSearch_CloudWatch_Alarms")
+update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Dashboard_Nginx_Proxy", "views", openSearch_dashboard_nginx_proxy_views)
 
-update_cloudformation_template_deployments_in_readme("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Dashboard_Nginx_Proxy", openSearch_dashboard_nginx_proxy_downloads)
 
-#
-# OpenSearch_kNN_Vector_Search
-#
-
-openSearch_kNN_vector_search_downloads = get_number_of_deployments("OpenSearch_kNN_Vector_Search.yaml")
-
-update_cloudformation_template_deployments_in_readme("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_kNN_Vector_Search", openSearch_kNN_vector_search_downloads)
-
-#
-# OpenSearch_Local_Dashboard_Server
-#
-
-openSearch_local_dashboard_server_downloads = get_number_of_deployments("opensearch-dashboard-no-ssl-ecs-fargate.yaml")
-
-update_cloudformation_template_deployments_in_readme("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Local_Dashboard_Server", openSearch_local_dashboard_server_downloads)
-
-#
-# Glue_Aggregate_Small_Files 
-#
-
-glue_aggregate_small_files_downloads = get_number_of_deployments("Aggregate_Small_Parquet_File_Glue_Job_Deployment.yaml")
-
-update_cloudformation_template_deployments_in_readme("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\Glue_Aggregate_Small_Files", glue_aggregate_small_files_downloads)
-
-#
-# DataZone_Demo 
-#
-
-dataZone_demo_downloads = get_number_of_deployments("0_datazone_cloudformation.yaml")
-
-update_cloudformation_template_deployments_in_readme("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\DataZone_Demo", dataZone_demo_downloads)
-'''
+openSearch_dashboard_nginx_proxy_vists = get_number_of_unique_visits("OpenSearch_CloudWatch_Alarms")
+update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Dashboard_Nginx_Proxy", "unique-visits", openSearch_dashboard_nginx_proxy_vists)
