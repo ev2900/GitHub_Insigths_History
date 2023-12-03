@@ -58,19 +58,25 @@ def update_readme_icon (repo_path, icon_type, number_to_update):
 
 		# Views
 		if icon_type == 'views':
-			regex = r'<img width="85" alt="map-user" src="https://img.shields.io/badge/views-.*-green">'
+			regex = r'.*<img width="\d{1,5}" alt="map-user" src="https://img.shields.io/badge/views-.*-green">.*'
 
 			if re.match(regex, line):
-				new_README_lines.append('<img width="85" alt="map-user" src="https://img.shields.io/badge/views-' + str(number_to_update) + '-green">')
+				new_line = re.sub(r'(https://img.shields.io/badge/views-)\d+(-green)', r'\g<1>' + str(number_to_update) + r'\2', line)
+				
+				new_README_lines.append(new_line)
+
 			else:
 				new_README_lines.append(line)
 
 		# Unique Vists
 		elif icon_type == 'unique-visits':
-			regex = r'<img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-.*-green">'
+			regex = r'.*<img width="\d{1,5}" alt="map-user" src="https://img.shields.io/badge/unique visits-.*-green">.*'
 
 			if re.match(regex, line):
-				new_README_lines.append('<img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-' + str(number_to_update) + '-green">')
+				new_line = re.sub(r'(https://img.shields.io/badge/unique visits-)\d+(-green)', r'\g<1>' + str(number_to_update) + r'\2', line)
+				
+				new_README_lines.append(new_line)
+			
 			else:
 				new_README_lines.append(line)
 
@@ -85,7 +91,7 @@ def update_readme_icon (repo_path, icon_type, number_to_update):
 	os.system("git -C " + repo_path + " add .")
 	os.system('git -C ' + repo_path + ' commit -m "Updating downloads"')
 	os.system("git -C " + repo_path + " push")
-	
+
 #
 # OpenSearch_CloudWatch_Alarms
 #
@@ -95,6 +101,8 @@ openSearch_cloudWatch_alarms_views = get_number_of_views("OpenSearch_CloudWatch_
 openSearch_cloudWatch_alarms_unique_vists = get_number_of_unique_visits("OpenSearch_CloudWatch_Alarms")
 
 update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_CloudWatch_Alarms", "views", openSearch_cloudWatch_alarms_views)
+
+update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_CloudWatch_Alarms", "unique-visits", openSearch_cloudWatch_alarms_unique_vists)
 
 '''
 #
