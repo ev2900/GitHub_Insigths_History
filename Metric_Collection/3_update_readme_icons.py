@@ -107,7 +107,7 @@ update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Clou
 # OpenSearch_Dashboard_Nginx_Proxy
 #
 
-openSearch_dashboard_nginx_proxy_views = get_number_of_views("OpenSearch_Dashboard_Nginx_Proxyv")
+openSearch_dashboard_nginx_proxy_views = get_number_of_views("OpenSearch_Dashboard_Nginx_Proxy")
 update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Dashboard_Nginx_Proxy", "views", openSearch_dashboard_nginx_proxy_views)
 
 
