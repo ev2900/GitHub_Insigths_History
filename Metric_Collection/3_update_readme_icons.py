@@ -85,10 +85,7 @@ def update_readme_icon (repo_path, icon_type, number_to_update):
 	os.system("git -C " + repo_path + " add .")
 	os.system('git -C ' + repo_path + ' commit -m "Updating downloads"')
 	os.system("git -C " + repo_path + " push")
-
-	# Print the number of deployments
-	print("Number of " + repo_path.split('\\')[-1].replace('_', ' ') + " downloads = " + str(number_of_cloudformation_template_deployments))
-
+	
 #
 # OpenSearch_CloudWatch_Alarms
 #
