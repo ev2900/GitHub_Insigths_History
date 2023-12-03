@@ -66,7 +66,7 @@ def update_readme_icon (repo_path, icon_type, number_to_update):
 				new_README_lines.append(line)
 
 		# Unique Vists
-		else if icon_type == 'unique-visits':
+		elif icon_type == 'unique-visits':
 			regex = r'<img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-.*-green">'
 
 			if re.match(regex, line):
