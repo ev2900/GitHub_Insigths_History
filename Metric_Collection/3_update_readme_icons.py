@@ -93,7 +93,7 @@ def update_readme_icon (repo_path, icon_type, number_to_update):
 	os.system("git -C " + repo_path + " push")
 
 #
-repos = ["OpenSearch_CloudWatch_Alarms", "OpenSearch_Dashboard_Nginx_Proxy", "OpenSearch_Resource_Flow_Chart", "OpenSearch_Refresh_Interval", "OpenSearch_Read_Only_Index", "Glue_Aggregate_Small_Files", "OpenSearch_Index_Shard_Size", "OpenSearch_Local_Dashboard_Server", "DataZone_Demo", "OpenSearch_kNN_Vector_Search", "OpenSearch_Vector_Search_w_Fine-tuned_BERT_on_SageMaker", "Cosine_Similarity_Search_Example", "Bedrock_Examples", "OpenSearch_Neural_Search", "BM25_Search_Example", "MongoDB_Streams_Glue_Iceberg", "OpenSearch_Sigv4_IAM_Auth"]
+repos = ["OpenSearch_CloudWatch_Alarms", "OpenSearch_Dashboard_Nginx_Proxy", "OpenSearch_Resource_Flow_Chart", "OpenSearch_Refresh_Interval", "OpenSearch_Read_Only_Index", "Glue_Aggregate_Small_Files", "OpenSearch_Index_Shard_Size", "OpenSearch_Local_Dashboard_Server", "DataZone_Demo", "OpenSearch_kNN_Vector_Search", "OpenSearch_Vector_Search_w_Fine-tuned_BERT_on_SageMaker", "Cosine_Similarity_Search_Example", "Bedrock_Examples", "OpenSearch_Neural_Search", "BM25_Search_Example", "MongoDB_Streams_Glue_Iceberg", "OpenSearch_Sigv4_IAM_Auth", "OpenSearch_User_Role_Premission_Managment", "Glue_Spark_History_Server", "Iceberg_EMR_Athena", "SecurityLake_AmazonSecurityLakeMetaStoreManager", "OpenSearch_API_Examples", "Redshift_Data_Sharing_Demo", "OpenSearch_Audit_Logs", "Boto3_Authentication_Options", "Comprehend_Real-time_Analysis_Example", "OpenSearch_DeletedDocuments", "Outlook_MSG_Parser_Python"]
 
 for repo in repos:
 
