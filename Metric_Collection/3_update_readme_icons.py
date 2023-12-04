@@ -100,5 +100,11 @@ for repo in repos:
 	views = get_number_of_views(repo)
 	unique_visits = get_number_of_unique_visits(repo)
 
+	if len(views) < 5:
+		views = f"{views:04d}"
+
+	if len(unique_visits) < 5:
+		unique_visits = f"{unique_visits:04d}"
+
 	update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\" + repo, "views", views)
 	update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\" + repo, "unique-visits", unique_visits)
