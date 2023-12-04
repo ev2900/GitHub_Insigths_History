@@ -99,7 +99,6 @@ def update_readme_icon (repo_path, icon_type, number_to_update):
 openSearch_cloudWatch_alarms_views = get_number_of_views("OpenSearch_CloudWatch_Alarms")
 update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_CloudWatch_Alarms", "views", openSearch_cloudWatch_alarms_views)
 
-
 openSearch_cloudWatch_alarms_unique_vists = get_number_of_unique_visits("OpenSearch_CloudWatch_Alarms")
 update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_CloudWatch_Alarms", "unique-visits", openSearch_cloudWatch_alarms_unique_vists)
 
@@ -110,6 +109,15 @@ update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Clou
 openSearch_dashboard_nginx_proxy_views = get_number_of_views("OpenSearch_Dashboard_Nginx_Proxy")
 update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Dashboard_Nginx_Proxy", "views", openSearch_dashboard_nginx_proxy_views)
 
-
 openSearch_dashboard_nginx_proxy_vists = get_number_of_unique_visits("OpenSearch_Dashboard_Nginx_Proxy")
 update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Dashboard_Nginx_Proxy", "unique-visits", openSearch_dashboard_nginx_proxy_vists)
+
+#
+# OpenSearch_Resource_Flow_Chart
+#
+
+openSearch_resource_flow_chart_views = get_number_of_views("OpenSearch_Resource_Flow_Chart")
+update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Resource_Flow_Chart", "views", openSearch_resource_flow_chart_views)
+
+openSearch_resource_flow_chart_vists = get_number_of_unique_visits("OpenSearch_Resource_Flow_Chart")
+update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Resource_Flow_Chart", "unique-visits", openSearch_resource_flow_chart_vists)
