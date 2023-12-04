@@ -93,18 +93,24 @@ def update_readme_icon (repo_path, icon_type, number_to_update):
 	os.system("git -C " + repo_path + " push")
 
 #
-repos = ["OpenSearch_CloudWatch_Alarms", "OpenSearch_Dashboard_Nginx_Proxy", "OpenSearch_Resource_Flow_Chart", "OpenSearch_Refresh_Interval", "OpenSearch_Read_Only_Index", "Glue_Aggregate_Small_Files", "OpenSearch_Index_Shard_Size", "OpenSearch_Local_Dashboard_Server", "DataZone_Demo", "OpenSearch_kNN_Vector_Search"]
+repos = ["OpenSearch_CloudWatch_Alarms", "OpenSearch_Dashboard_Nginx_Proxy", "OpenSearch_Resource_Flow_Chart", "OpenSearch_Refresh_Interval", "OpenSearch_Read_Only_Index", "Glue_Aggregate_Small_Files", "OpenSearch_Index_Shard_Size", "OpenSearch_Local_Dashboard_Server", "DataZone_Demo", "OpenSearch_kNN_Vector_Search", "OpenSearch_Vector_Search_w_Fine-tuned_BERT_on_SageMaker", "Cosine_Similarity_Search_Example", "Bedrock_Examples"]
 
 for repo in repos:
 
 	views = get_number_of_views(repo)
 	unique_visits = get_number_of_unique_visits(repo)
 
-	if len(views) < 5:
-		views = f'{views:04}'
+	# Format views with leading zeros
+	if len(views) == 1:
+		views = "00" + str(views)
+	elif len(views) == 2:
+		views = "0" + str(views)
 
-	if len(unique_visits) < 5:
-		unique_visits = f'{unique_visits:04}'
+	# Format unique vists with leading zero
+	if len(unique_visits) == 1:
+		unique_visits = "00" + str(unique_visits)
+	elif len(unique_visits) == 2:
+		unique_visits = "0" + str(unique_visits)
 
 	update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\" + repo, "views", views)
 	update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\" + repo, "unique-visits", unique_visits)
