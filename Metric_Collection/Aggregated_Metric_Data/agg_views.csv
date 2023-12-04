@@ -4,7 +4,7 @@ OpenSearch_CloudWatch_Alarms,4446
 Flink_Kinesis_Data_Analytics,4053
 Glue_Aggregate_Small_Files,1356
 MongoDB_Streams_Glue_Iceberg,1052
-OpenSearch_Local_Dashboard_Server,986
+OpenSearch_Local_Dashboard_Server,985
 OpenSearch_Refresh_Interval,866
 OpenSearch_API_Examples,826
 EMR_Studio_Hudi,797
