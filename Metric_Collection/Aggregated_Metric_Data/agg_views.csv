@@ -1,11 +1,11 @@
 Repository_Name,Total
 OpenSearch_Dashboard_Nginx_Proxy,5676
-OpenSearch_CloudWatch_Alarms,4456
+OpenSearch_CloudWatch_Alarms,4446
 Flink_Kinesis_Data_Analytics,4053
-Glue_Aggregate_Small_Files,1362
+Glue_Aggregate_Small_Files,1356
 MongoDB_Streams_Glue_Iceberg,1052
 OpenSearch_Local_Dashboard_Server,986
-OpenSearch_Refresh_Interval,868
+OpenSearch_Refresh_Interval,866
 OpenSearch_API_Examples,826
 EMR_Studio_Hudi,797
 GitHub_Insigths_History,796
@@ -24,7 +24,7 @@ Glue_Hudi,341
 OpenSearch_Sigv4_IAM_Auth,272
 CloudFormation_Examples,204
 OpenSearch_DeletedDocuments,195
-OpenSearch_Resource_Flow_Chart,193
+OpenSearch_Resource_Flow_Chart,192
 Glue_Spark_History_Server,183
 S3_Server_Access_Logs_ev2900-sharkech-public,173
 OpenSearch_User_Role_Premission_Managment,171

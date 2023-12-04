@@ -1,10 +1,10 @@
 Repository_Name,Total
 OpenSearch_Dashboard_Nginx_Proxy,1619
-OpenSearch_CloudWatch_Alarms,1452
+OpenSearch_CloudWatch_Alarms,1449
 Flink_Kinesis_Data_Analytics,755
-OpenSearch_Refresh_Interval,617
+OpenSearch_Refresh_Interval,615
 OpenSearch_Read_Only_Index,279
-Glue_Aggregate_Small_Files,268
+Glue_Aggregate_Small_Files,267
 OpenSearch_Index_Shard_Size,223
 OpenSearch_API_Examples,207
 OpenSearch_Log_Analytics,200
