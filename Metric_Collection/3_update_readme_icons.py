@@ -93,7 +93,7 @@ def update_readme_icon (repo_path, icon_type, number_to_update):
 	os.system("git -C " + repo_path + " push")
 
 #
-repos = ["OpenSearch_CloudWatch_Alarms", "OpenSearch_Dashboard_Nginx_Proxy", "OpenSearch_Resource_Flow_Chart", "OpenSearch_Refresh_Interval", "OpenSearch_Read_Only_Index", "Glue_Aggregate_Small_Files", "OpenSearch_Index_Shard_Size", "OpenSearch_Local_Dashboard_Server", "DataZone_Demo"]
+repos = ["OpenSearch_CloudWatch_Alarms", "OpenSearch_Dashboard_Nginx_Proxy", "OpenSearch_Resource_Flow_Chart", "OpenSearch_Refresh_Interval", "OpenSearch_Read_Only_Index", "Glue_Aggregate_Small_Files", "OpenSearch_Index_Shard_Size", "OpenSearch_Local_Dashboard_Server", "DataZone_Demo", "OpenSearch_kNN_Vector_Search"]
 
 for repo in repos:
 
