@@ -93,81 +93,12 @@ def update_readme_icon (repo_path, icon_type, number_to_update):
 	os.system("git -C " + repo_path + " push")
 
 #
-# OpenSearch_CloudWatch_Alarms
-#
+repos = ["OpenSearch_CloudWatch_Alarms", "OpenSearch_Dashboard_Nginx_Proxy", "OpenSearch_Resource_Flow_Chart", "OpenSearch_Refresh_Interval", "OpenSearch_Read_Only_Index", "Glue_Aggregate_Small_Files", "OpenSearch_Index_Shard_Size", "OpenSearch_Local_Dashboard_Server", "DataZone_Demo"]
 
-openSearch_cloudWatch_alarms_views = get_number_of_views("OpenSearch_CloudWatch_Alarms")
-update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_CloudWatch_Alarms", "views", openSearch_cloudWatch_alarms_views)
+for repo in repos:
 
-openSearch_cloudWatch_alarms_unique_vists = get_number_of_unique_visits("OpenSearch_CloudWatch_Alarms")
-update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_CloudWatch_Alarms", "unique-visits", openSearch_cloudWatch_alarms_unique_vists)
+	views = get_number_of_views(repo)
+	unique_visits = get_number_of_unique_visits(repo)
 
-#
-# OpenSearch_Dashboard_Nginx_Proxy
-#
-
-openSearch_dashboard_nginx_proxy_views = get_number_of_views("OpenSearch_Dashboard_Nginx_Proxy")
-update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Dashboard_Nginx_Proxy", "views", openSearch_dashboard_nginx_proxy_views)
-
-openSearch_dashboard_nginx_proxy_vists = get_number_of_unique_visits("OpenSearch_Dashboard_Nginx_Proxy")
-update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Dashboard_Nginx_Proxy", "unique-visits", openSearch_dashboard_nginx_proxy_vists)
-
-#
-# OpenSearch_Resource_Flow_Chart
-#
-
-openSearch_resource_flow_chart_views = get_number_of_views("OpenSearch_Resource_Flow_Chart")
-update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Resource_Flow_Chart", "views", openSearch_resource_flow_chart_views)
-
-openSearch_resource_flow_chart_vists = get_number_of_unique_visits("OpenSearch_Resource_Flow_Chart")
-update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Resource_Flow_Chart", "unique-visits", openSearch_resource_flow_chart_vists)
-
-#
-# OpenSearch_Refresh_Interval
-#
-
-openSearch_refresh_interval_views = get_number_of_views("OpenSearch_Refresh_Interval")
-update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Refresh_Interval", "views", openSearch_refresh_interval_views)
-
-openSearch_refresh_interval_vists = get_number_of_unique_visits("OpenSearch_Refresh_Interval")
-update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Refresh_Interval", "unique-visits", openSearch_refresh_interval_vists)
-
-#
-# OpenSearch_Read_Only_Index
-#
-
-openSearch_read_only_index_views = get_number_of_views("OpenSearch_Read_Only_Index")
-update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Read_Only_Index", "views", openSearch_read_only_index_views)
-
-openSearch_read_only_index_vists = get_number_of_unique_visits("OpenSearch_Read_Only_Index")
-update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Read_Only_Index", "unique-visits", openSearch_read_only_index_vists)
-
-#
-# Glue_Aggregate_Small_Files
-#
-
-glue_aggregate_small_files_views = get_number_of_views("Glue_Aggregate_Small_Files")
-update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\Glue_Aggregate_Small_Files", "views", glue_aggregate_small_files_views)
-
-glue_aggregate_small_files_vists = get_number_of_unique_visits("Glue_Aggregate_Small_Files")
-update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\Glue_Aggregate_Small_Files", "unique-visits", glue_aggregate_small_files_vists)
-
-#
-# OpenSearch_Index_Shard_Size
-#
-
-openSearch_index_shard_size_views = get_number_of_views("OpenSearch_Index_Shard_Size")
-update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Index_Shard_Size", "views", openSearch_index_shard_size_views)
-
-openSearch_index_shard_size_vists = get_number_of_unique_visits("OpenSearch_Index_Shard_Size")
-update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Index_Shard_Size", "unique-visits", openSearch_index_shard_size_vists)
-
-#
-# OpenSearch_Local_Dashboard_Server
-#
-
-openSearch_local_dashboard_server_views = get_number_of_views("OpenSearch_Local_Dashboard_Server")
-update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Local_Dashboard_Server", "views", openSearch_local_dashboard_server_views)
-
-openSearch_local_dashboard_server_views = get_number_of_unique_visits("OpenSearch_Local_Dashboard_Server")
-update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\OpenSearch_Local_Dashboard_Server", "unique-visits", openSearch_local_dashboard_server_views)
+	update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\" + repo, "views", views)
+	update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\" + repo, "unique-visits", unique_visits)
