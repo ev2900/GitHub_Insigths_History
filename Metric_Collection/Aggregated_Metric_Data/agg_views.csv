@@ -1,8 +1,8 @@
 Repository_Name,Total
-OpenSearch_Dashboard_Nginx_Proxy,5677
-OpenSearch_CloudWatch_Alarms,4467
+OpenSearch_Dashboard_Nginx_Proxy,5676
+OpenSearch_CloudWatch_Alarms,4456
 Flink_Kinesis_Data_Analytics,4053
-Glue_Aggregate_Small_Files,1370
+Glue_Aggregate_Small_Files,1362
 MongoDB_Streams_Glue_Iceberg,1052
 OpenSearch_Local_Dashboard_Server,986
 OpenSearch_Refresh_Interval,868
