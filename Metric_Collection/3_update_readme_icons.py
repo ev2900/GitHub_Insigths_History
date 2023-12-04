@@ -101,10 +101,10 @@ for repo in repos:
 	unique_visits = get_number_of_unique_visits(repo)
 
 	if len(views) < 5:
-		views = f"{views:04d}"
+		views = String.format("%04d", views)
 
 	if len(unique_visits) < 5:
-		unique_visits = f"{unique_visits:04d}"
+		unique_visits = String.format("%04d", unique_visits)
 
 	update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\" + repo, "views", views)
 	update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\" + repo, "unique-visits", unique_visits)
