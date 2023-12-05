@@ -132,11 +132,11 @@ repos = [
     "OpenSearch_Vector_Search_w_Fine-tuned_BERT_on_SageMaker",
     "OpenSearch_kNN_Vector_Search",
     "DataZone_Demo",
-    "OpenSearch_Local_Dashboard_Server",
     "OpenSearch_Index_Shard_Size",
     "Glue_Aggregate_Small_Files",
     "OpenSearch_Read_Only_Index",
     "OpenSearch_Refresh_Interval",
+    "OpenSearch_Local_Dashboard_Server",
     "OpenSearch_Resource_Flow_Chart",
     "OpenSearch_Dashboard_Nginx_Proxy",
     "OpenSearch_CloudWatch_Alarms"

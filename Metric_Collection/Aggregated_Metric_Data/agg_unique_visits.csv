@@ -1,13 +1,13 @@
 Repository_Name,Total
 OpenSearch_Dashboard_Nginx_Proxy,1625
-OpenSearch_CloudWatch_Alarms,1452
+OpenSearch_CloudWatch_Alarms,1447
 Flink_Kinesis_Data_Analytics,755
 OpenSearch_Refresh_Interval,610
 OpenSearch_Read_Only_Index,281
-Glue_Aggregate_Small_Files,271
+Glue_Aggregate_Small_Files,270
 OpenSearch_Index_Shard_Size,225
 OpenSearch_API_Examples,209
-OpenSearch_Log_Analytics,201
+OpenSearch_Log_Analytics,200
 OpenSearch_Kafka_Anomaly_Detection,197
 EMR_Studio_Hudi,194
 OpenSearch_Local_Dashboard_Server,173
@@ -19,7 +19,7 @@ Iceberg_EMR_Athena,106
 OpenSearch_kNN_Vector_Search,97
 Glue_Hudi,93
 OpenSearch_Sigv4_IAM_Auth,89
-OpenSearch_Neural_Search,86
+OpenSearch_Neural_Search,84
 GitHub_Insigths_History,78
 EMR_Studio_Iceberg,66
 OpenSearch_DeletedDocuments,62
