@@ -93,7 +93,54 @@ def update_readme_icon (repo_path, icon_type, number_to_update):
 	os.system("git -C " + repo_path + " push")
 
 #
-repos = ["OpenSearch_CloudWatch_Alarms", "OpenSearch_Dashboard_Nginx_Proxy", "OpenSearch_Resource_Flow_Chart", "OpenSearch_Refresh_Interval", "OpenSearch_Read_Only_Index", "Glue_Aggregate_Small_Files", "OpenSearch_Index_Shard_Size", "OpenSearch_Local_Dashboard_Server", "DataZone_Demo", "OpenSearch_kNN_Vector_Search", "OpenSearch_Vector_Search_w_Fine-tuned_BERT_on_SageMaker", "Cosine_Similarity_Search_Example", "Bedrock_Examples", "OpenSearch_Neural_Search", "BM25_Search_Example", "MongoDB_Streams_Glue_Iceberg", "OpenSearch_Sigv4_IAM_Auth", "OpenSearch_User_Role_Premission_Managment", "Glue_Spark_History_Server", "Iceberg_EMR_Athena", "SecurityLake_AmazonSecurityLakeMetaStoreManager", "OpenSearch_API_Examples", "Redshift_Data_Sharing_Demo", "OpenSearch_Audit_Logs", "Boto3_Authentication_Options", "Comprehend_Real-time_Analysis_Example", "OpenSearch_DeletedDocuments", "Outlook_MSG_Parser_Python", "OpenSearch_Log_Analytics", "Logstash_Example", "EMR_Studio_Iceberg", "EMR_Studio_Delta_Lake", "EMR_Studio_Delta_Lake", "EMR_Studio_Deployment", "EMR_Studio_Hudi", "EMR_Studio_Stock_Price_Demo", "Managed_Streaming_for_Apache_Kafka_Examples", "OpenSearch_DynamoDB_Example", "Fluentd_Examples", "Glue_Examples", "Flink_Kinesis_Data_Analytics_Scala", "Kinesis_Data_Stream_Hot_Shard_Demo", "OpenSearch_Kafka_Anomaly_Detection", "Flink_Late_Arriving_Date_Event_Order", "Redshift_Helpful_Queries", "Glue_Hudi"]
+repos = [
+    "Glue_Hudi",
+    "Redshift_Helpful_Queries",
+    "Flink_Late_Arriving_Date_Event_Order",
+    "OpenSearch_Kafka_Anomaly_Detection",
+    "Kinesis_Data_Stream_Hot_Shard_Demo",
+    "Flink_Kinesis_Data_Analytics_Scala",
+    "Glue_Examples",
+    "Fluentd_Examples",
+    "OpenSearch_DynamoDB_Example",
+    "Managed_Streaming_for_Apache_Kafka_Examples",
+    "EMR_Studio_Stock_Price_Demo",
+    "EMR_Studio_Hudi",
+    "EMR_Studio_Deployment",
+    "EMR_Studio_Delta_Lake",
+    "EMR_Studio_Delta_Lake",
+    "EMR_Studio_Iceberg",
+    "Logstash_Example",
+    "OpenSearch_Log_Analytics",
+    "Outlook_MSG_Parser_Python",
+    "OpenSearch_DeletedDocuments",
+    "Comprehend_Real-time_Analysis_Example",
+    "Boto3_Authentication_Options",
+    "OpenSearch_Audit_Logs",
+    "Redshift_Data_Sharing_Demo",
+    "OpenSearch_API_Examples",
+    "SecurityLake_AmazonSecurityLakeMetaStoreManager",
+    "Iceberg_EMR_Athena",
+    "Glue_Spark_History_Server",
+    "OpenSearch_User_Role_Premission_Managment",
+    "OpenSearch_Sigv4_IAM_Auth",
+    "MongoDB_Streams_Glue_Iceberg",
+    "BM25_Search_Example",
+    "OpenSearch_Neural_Search",
+    "Bedrock_Examples",
+    "Cosine_Similarity_Search_Example",
+    "OpenSearch_Vector_Search_w_Fine-tuned_BERT_on_SageMaker",
+    "OpenSearch_kNN_Vector_Search",
+    "DataZone_Demo",
+    "OpenSearch_Local_Dashboard_Server",
+    "OpenSearch_Index_Shard_Size",
+    "Glue_Aggregate_Small_Files",
+    "OpenSearch_Read_Only_Index",
+    "OpenSearch_Refresh_Interval",
+    "OpenSearch_Resource_Flow_Chart",
+    "OpenSearch_Dashboard_Nginx_Proxy",
+    "OpenSearch_CloudWatch_Alarms"
+]
 
 for repo in repos:
 
