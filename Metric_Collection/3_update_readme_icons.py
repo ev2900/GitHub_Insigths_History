@@ -139,7 +139,8 @@ repos = [
     "OpenSearch_Local_Dashboard_Server",
     "OpenSearch_Resource_Flow_Chart",
     "OpenSearch_Dashboard_Nginx_Proxy",
-    "OpenSearch_CloudWatch_Alarms"
+    "OpenSearch_CloudWatch_Alarms",
+    "Neo4j_Infrastructure"
 ]
 
 for repo in repos:
