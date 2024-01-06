@@ -67,13 +67,13 @@ for line in README_lines:
 
 	else:
 		# Update totals for all months
-		if re.match(r'\| 2023-.*', line):
+		if re.match(r'\| 2024-.*', line):
 			views_months.append(int(line.split('|')[2].rstrip().lstrip()))
 			unique_visits_months.append(int(line.split('|')[3].rstrip().lstrip()))
 
 		if re.match(r'.*Total.*', line):
-			print("Total number of unique views for 2023: " + str(sum(views_months)))
-			print("Total number of unique visits for 2023: " + str(sum(unique_visits_months)))
+			print("Total number of unique views for 2024: " + str(sum(views_months)))
+			print("Total number of unique visits for 2024: " + str(sum(unique_visits_months)))
 			
 			new_README_lines.append("| **Total** | **" + str(sum(views_months)) + "** | **" + str(sum(unique_visits_months)) + "** |")
 			#print("| **Total** | **" + str(sum(views_months)) + "** | **" + str(sum(unique_visits_months)) + "** |")
