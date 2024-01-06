@@ -140,7 +140,8 @@ repos = [
     "OpenSearch_Resource_Flow_Chart",
     "OpenSearch_Dashboard_Nginx_Proxy",
     "OpenSearch_CloudWatch_Alarms",
-    "Neo4j_Infrastructure"
+    "Neo4j_Infrastructure",
+    "DataZone_Demo_FSI"
 ]
 
 for repo in repos:
