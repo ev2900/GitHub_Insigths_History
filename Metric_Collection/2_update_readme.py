@@ -72,8 +72,8 @@ for line in README_lines:
 			unique_visits_months.append(int(line.split('|')[3].rstrip().lstrip()))
 
 		if re.match(r'.*Total.*', line):
-			print("Total number of unique views for 2025: " + str(sum(views_months)))
-			print("Total number of unique visits for 2025: " + str(sum(unique_visits_months)))
+			print("Total number of unique views: " + str(sum(views_months)))
+			print("Total number of unique visits: " + str(sum(unique_visits_months)))
 			
 			new_README_lines.append("| **Total** | **" + str(sum(views_months)) + "** | **" + str(sum(unique_visits_months)) + "** |")
 			#print("| **Total** | **" + str(sum(views_months)) + "** | **" + str(sum(unique_visits_months)) + "** |")
