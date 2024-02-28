@@ -6,7 +6,7 @@ OpenSearch_Refresh_Interval,770
 Glue_Aggregate_Small_Files,497
 OpenSearch_Read_Only_Index,486
 OpenSearch_Index_Shard_Size,341
-OpenSearch_kNN_Vector_Search,294
+OpenSearch_kNN_Vector_Search,292
 OpenSearch_API_Examples,260
 OpenSearch_Local_Dashboard_Server,260
 EMR_Studio_Hudi,249

@@ -141,7 +141,8 @@ repos = [
     "OpenSearch_Dashboard_Nginx_Proxy",
     "OpenSearch_CloudWatch_Alarms",
     "Neo4j_Infrastructure",
-    "DataZone_Demo_FSI"
+    "DataZone_Demo_FSI",
+    "Iceberg_Glue_from_JARs"
 ]
 
 for repo in repos:
