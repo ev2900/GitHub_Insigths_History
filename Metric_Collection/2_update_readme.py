@@ -67,7 +67,7 @@ for line in README_lines:
 
 	else:
 		# Update totals for all months
-		if re.match(r'\| 202[45]-.*', line):
+		if re.match(r'\| 202\d-.*', line):
 			views_months.append(int(line.split('|')[2].rstrip().lstrip()))
 			unique_visits_months.append(int(line.split('|')[3].rstrip().lstrip()))
 
