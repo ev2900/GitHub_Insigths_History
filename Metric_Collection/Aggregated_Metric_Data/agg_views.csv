@@ -3,11 +3,11 @@ OpenSearch_Dashboard_Nginx_Proxy,10471
 OpenSearch_CloudWatch_Alarms,7941
 Flink_Kinesis_Data_Analytics,7142
 Glue_Aggregate_Small_Files,3736
-OpenSearch_Local_Dashboard_Server,2339
+OpenSearch_Local_Dashboard_Server,2338
 OpenSearch_kNN_Vector_Search,2193
-BM25_Search_Example,1976
+BM25_Search_Example,1972
 DataZone_Demo_FSI,1815
-OpenSearch_Index_Shard_Size,1748
+OpenSearch_Index_Shard_Size,1747
 Iceberg_EMR_Athena,1728
 OpenSearch_Refresh_Interval,1638
 OpenSearch_Read_Only_Index,1634
@@ -15,7 +15,7 @@ Glue_Examples,1549
 OpenSearch_API_Examples,1527
 MongoDB_Streams_Glue_Iceberg,1494
 EMR_Studio_Hudi,1480
-OpenSearch_DeletedDocuments,1472
+OpenSearch_DeletedDocuments,1471
 GitHub_Insigths_History,1121
 Cosine_Similarity_Search_Example,1116
 Outlook_MSG_Parser_Python,1098
