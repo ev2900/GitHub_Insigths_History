@@ -142,7 +142,8 @@ repos = [
     "OpenSearch_CloudWatch_Alarms",
     "Neo4j_Infrastructure",
     "DataZone_Demo_FSI",
-    "Iceberg_Glue_from_JARs"
+    "Iceberg_Glue_from_JARs",
+    "Iceberg_Glue_register_table"
 ]
 
 for repo in repos:

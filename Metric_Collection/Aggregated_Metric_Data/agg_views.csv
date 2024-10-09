@@ -10,7 +10,7 @@ DataZone_Demo_FSI,1815
 OpenSearch_Index_Shard_Size,1748
 Iceberg_EMR_Athena,1728
 OpenSearch_Refresh_Interval,1638
-OpenSearch_Read_Only_Index,1635
+OpenSearch_Read_Only_Index,1634
 Glue_Examples,1549
 OpenSearch_API_Examples,1527
 MongoDB_Streams_Glue_Iceberg,1494

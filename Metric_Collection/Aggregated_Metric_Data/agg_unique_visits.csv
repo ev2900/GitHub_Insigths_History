@@ -4,7 +4,7 @@ OpenSearch_CloudWatch_Alarms,2681
 BM25_Search_Example,1229
 OpenSearch_Refresh_Interval,1222
 Flink_Kinesis_Data_Analytics,1219
-OpenSearch_Read_Only_Index,1108
+OpenSearch_Read_Only_Index,1107
 OpenSearch_Index_Shard_Size,1080
 Glue_Aggregate_Small_Files,1058
 OpenSearch_kNN_Vector_Search,741
