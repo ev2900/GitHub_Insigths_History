@@ -143,7 +143,8 @@ repos = [
     "Neo4j_Infrastructure",
     "DataZone_Demo_FSI",
     "Iceberg_Glue_from_JARs",
-    "Iceberg_Glue_register_table"
+    "Iceberg_Glue_register_table",
+    "Iceberg_update_metadata_script"
 ]
 
 for repo in repos:
