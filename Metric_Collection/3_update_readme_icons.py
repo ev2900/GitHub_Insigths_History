@@ -144,7 +144,8 @@ repos = [
     "DataZone_Demo_FSI",
     "Iceberg_Glue_from_JARs",
     "Iceberg_Glue_register_table",
-    "Iceberg_update_metadata_script"
+    "Iceberg_update_metadata_script",
+    "Opentelemetry_Tracing_Python"
 ]
 
 for repo in repos:
