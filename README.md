@@ -41,8 +41,8 @@ Or the table below summarizes views and unique visits per month for all of my re
 | 2025-03 | 2083 | 1145 |
 | 2025-04 | 1545 | 793 |
 | 2025-05 | 1654 | 905 |
-| 2025-06 | 1077 | 555 |
-| **Total** | **84486** | **29286** |
+| 2025-06 | 1426 | 766 |
+| **Total** | **84835** | **29497** |
 
 ## How to Set this up for your GitHub
 

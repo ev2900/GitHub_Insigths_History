@@ -145,7 +145,8 @@ repos = [
     "Iceberg_Glue_from_JARs",
     "Iceberg_Glue_register_table",
     "Iceberg_update_metadata_script",
-    "Opentelemetry_Tracing_Python"
+    "Opentelemetry_Tracing_Python",
+    "PyIceberg_Glue_Data_Catalog"
 ]
 
 for repo in repos:
