@@ -147,7 +147,8 @@ repos = [
     "Iceberg_update_metadata_script",
     "Opentelemetry_Tracing_Python",
     "PyIceberg_Glue_Data_Catalog",
-    "FastAPI_Pydantic_Examples"
+    "FastAPI_Pydantic_Examples",
+    "Iceberg_EMR_rewrite_table_path"
 ]
 
 for repo in repos:
