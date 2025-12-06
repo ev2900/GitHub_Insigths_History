@@ -148,7 +148,12 @@ repos = [
     "Opentelemetry_Tracing_Python",
     "PyIceberg_Glue_Data_Catalog",
     "FastAPI_Pydantic_Examples",
-    "Iceberg_EMR_rewrite_table_path"
+    "Iceberg_EMR_rewrite_table_path",
+    "GotMilk_TwelveLabs",
+    "Snowflake_Iceberg_GDC",
+    "Snowflake_Iceberg_Horizon",
+    "Snowflake_Iceberg_Polaris",
+    "PyIceberg_Glue_Data_Catalog"
 ]
 
 for repo in repos:
