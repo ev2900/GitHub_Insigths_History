@@ -153,7 +153,8 @@ repos = [
     "Snowflake_Iceberg_Horizon",
     "Snowflake_Iceberg_Polaris",
     "PyIceberg_Glue_Data_Catalog",
-    "DuckDB_Glue_Data_Catalog"
+    "DuckDB_Glue_Data_Catalog",
+    "MSR-VTT_Build"
 ]
 
 for repo in repos:
