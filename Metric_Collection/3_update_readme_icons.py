@@ -156,7 +156,8 @@ repos = [
     "DuckDB_Glue_Data_Catalog",
     "MSR-VTT_Build",
 	"MCP_Basics",
-	"MCP_AgentCore"
+	"MCP_AgentCore",
+	"Bedrock_Knowledge_Base_Redshift"
 ]
 
 for repo in repos:
